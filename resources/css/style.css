@@ -6,6 +6,7 @@ html{
 
 body {
     margin: 0;
+    background-color: #f3f5f5;
 }
 
 header{
@@ -133,7 +134,6 @@ a{
 .info{
     position: relative;
     top: 64px;
-    background-color: #f3f5f5;
 }
 
 .info-left img{
@@ -226,7 +226,7 @@ a{
 }
 
 .course-content{
-    padding: 16px 16px 24px 16px;
+    padding: 16px;
 }
 
 .course-content p{
@@ -251,6 +251,7 @@ a{
 
 #title{
     text-align: center;
+    border-top: 1px #ccc solid;
 }
 
 footer{
@@ -276,6 +277,15 @@ footer .container {
     color: gray;
     font-size: 0.8em;
     width: 100%;
+    border-top: 1px #ccc solid;
+}
+
+.mobile-title{
+    display: none;
+}
+
+.mobile-video{
+    display: none;
 }
 
 /*Media queries*/
@@ -322,9 +332,9 @@ footer .container {
     }
 
     .banner .content{
-        width: 100%;
-        max-width: 100%;
+        max-width: initial;
         margin-left: 16px;
+        margin-right: 16px;
     }
 
     .banner h1{
@@ -378,6 +388,7 @@ footer .container {
     .start-learning .container{
         padding: 32px 16px 32px 16px;
         background-color: #f5f4f5;
+        border-top: 1px #ccc solid;
     }
 
     .course-content{
@@ -415,5 +426,13 @@ footer .container {
 
    footer p{
     padding: 16px;
+   }
+
+   img{
+    margin: 0 !important;
+   }
+
+   .mobile-title{
+    display: block;
    }
 }
